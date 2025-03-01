@@ -73,7 +73,7 @@ export default function Home() {
       <section className="px-6 py-16 text-white bg-black">
         <div className="max-w-5xl mx-auto text-center">
       <h2 className="text-4xl font-bold">
-        Develop with your favorite tools <span className="text-blue-400">></span>
+        Develop with your favorite tools <span className="text-blue-400">&gt;</span>
       </h2>
 
 
@@ -88,7 +88,7 @@ export default function Home() {
       <div className="flex flex-col gap-8 p-10 text-white bg-black md:flex-row">
       {/* Left Section */}
       <div className="flex-1">
-        <h3 className="text-sm text-gray-400">>_ Git-connected Deploys</h3>
+        <h3 className="text-sm text-gray-400">&gt;_ Git-connected Deploys</h3>
         <h2 className="mt-2 text-2xl font-bold md:text-3xl">
           <span className="text-white">From localhost to https, in seconds.</span>
         </h2>
