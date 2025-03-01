@@ -213,6 +213,8 @@ export const Header = forwardRef<HTMLDivElement, HeaderProps>(
   }
 );
 
+Header.displayName = "Header";
+
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
