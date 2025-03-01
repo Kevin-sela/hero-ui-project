@@ -5,7 +5,6 @@ import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
 import { cva } from "class-variance-authority"
 import { cn } from "../../lib/utils"
 
-
 function NavigationMenu({
   className,
   children,
@@ -19,7 +18,7 @@ function NavigationMenu({
       data-slot="navigation-menu"
       data-viewport={viewport}
       className={cn(
-        "group/navigation-menu relative flex max-w-max flex-1 items-center justify-center",
+        "group/navigation-menu relative flex max-w-5xl mx-auto flex-1 items-center justify-center", // Updated width and centering
         className
       )}
       {...props}
