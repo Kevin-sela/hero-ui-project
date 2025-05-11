@@ -128,7 +128,7 @@ export default function Home() {
               <span className="text-white">From localhost to https, in seconds.</span>
             </h2>
             <p className="mt-2 text-gray-400">Deploy from Git or your CLI.</p>
-            <div className="p-4 mt-4 font-mono text-sm bg-gray-900 rounded-md">
+            <div className="p-4 mt-4 font-mono text-sm bg-gray-900 rounded-md"> 
               <p>▲ ~ vercel-site/ git push</p>
               <p>Enumerating objects: 1, done.</p>
               <p>Counting objects: 100% (1/1), done.</p>
