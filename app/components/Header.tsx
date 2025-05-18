@@ -56,9 +56,9 @@ export const Header = forwardRef<HTMLDivElement, HeaderProps>(
                           <NavigationMenuLink asChild>
                             <Link
                               href="/"
-                              className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                              className="flex flex-col justify-end w-full h-full p-6 no-underline rounded-md outline-none select-none bg-gradient-to-b from-muted/50 to-muted focus:shadow-md"
                             >
-                              <div className="mb-2 mt-4 text-lg font-medium">
+                              <div className="mt-4 mb-2 text-lg font-medium">
                                 Designs
                               </div>
                               <p className="text-sm leading-tight text-muted-foreground">
@@ -185,9 +185,17 @@ export const Header = forwardRef<HTMLDivElement, HeaderProps>(
             </div>
           </div>
           <div className="flex gap-x-2">
-            <Button variant="outline">Log In</Button>
+            <Link href="/login" legacyBehavior>
+              <a>
+                <Button variant="outline">Log In</Button>
+              </a>
+            </Link>
             <Button variant="outline">Contact</Button>
-            <Button variant="default">Sign Up</Button>
+            <Link href="/signup" legacyBehavior>
+              <a>
+                <Button variant="default">Sign Up</Button>
+              </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -213,7 +221,7 @@ const ListItem = React.forwardRef<
           )}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+          <p className="text-sm leading-snug line-clamp-2 text-muted-foreground">
             {children}
           </p>
         </Link>
